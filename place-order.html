@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/manage-customers.css">
+    <link rel="stylesheet" href="css/place-order.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -34,7 +34,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="index3.html" class="brand-link">
+        <a href="index.html" class="brand-link">
             <span class="brand-text font-weight-light">WEB - POS</span>
         </a>
 
@@ -61,7 +61,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="Manage-customers.html" class="nav-link active">
+                                <a href="Manage-customers.html" class="nav-link">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>Manage Customers</p>
                                 </a>
@@ -73,7 +73,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="place-order.html" class="nav-link">
+                                <a href="place-order.html" class="nav-link active">
                                     <i class="nav-icon fas fa-cart-plus"></i>
                                     <p>Place Order</p>
                                 </a>
@@ -100,7 +100,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0 text-dark">Manage Customers</h1>
+                        <h1 class="m-0 text-dark">Place Order</h1>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
@@ -114,33 +114,30 @@
                 <!-- Input addon -->
                 <div class="card card-info col-lg-12 col-6">
                     <div class="card-header">
-                        <h3 class="card-title">Add Customers</h3>
+                        <h3 class="card-title">Place an Order</h3>
                     </div>
                     <form>
                     <div class="card-body">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Customer ID">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Full Name">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-
-
                         <div class=" customer-buttons row">
-                            <div class="cus-button">
-                                    <button type="submit" class="btn btn-primary">Add</button>
-                                <!-- /input-group -->
+                            <div class="input-group col-lg-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name">
                             </div>
-                            <!-- /.col-lg-6 -->
-                            <div class="cus-button">
-                                <button type="submit" class="btn btn-primary">Delete</button>
-                                <!-- /input-group -->
+                            <div class="input-group col-lg-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Address">
                             </div>
+                        </div>
+                        <div class=" customer-buttons row">
+                            <div class="input-group col-lg-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="input-group col-lg-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                        </div>
+
+                        <div class=" my-button row">
                             <div class="cus-button">
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="submit" class="btn btn-primary">Add To Cart</button>
                                 <!-- /input-group -->
                             </div>
                             <!-- /.col-lg-6 -->
@@ -151,7 +148,7 @@
                 <div class="row col-lg-12 card card-info">
                     <div class="card">
                         <div class="card-header" id="table-header">
-                            <h3 class="card-title">Customer Details</h3>
+                            <h3 class="card-title">Order Details</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body p-0">

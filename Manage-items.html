@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/manage-customers.css">
+    <link rel="stylesheet" href="css/manage-items.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -73,7 +73,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="place-order.html" class="nav-link">
                                     <i class="nav-icon fas fa-cart-plus"></i>
                                     <p>Place Order</p>
                                 </a>
@@ -100,7 +100,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0 text-dark">Dashboard</h1>
+                        <h1 class="m-0 text-dark">Manage Items</h1>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
@@ -114,18 +114,21 @@
                 <!-- Input addon -->
                 <div class="card card-info col-lg-12 col-6">
                     <div class="card-header">
-                        <h3 class="card-title">Add Customers</h3>
+                        <h3 class="card-title">Add Items</h3>
                     </div>
                     <form>
                     <div class="card-body">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Customer ID">
+                            <input type="text" class="form-control" placeholder="Item Code">
                         </div>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Full Name">
+                            <input type="text" class="form-control" placeholder="Description">
                         </div>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Address">
+                            <input type="text" class="form-control" placeholder="Qty On Hand">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Price">
                         </div>
 
 
@@ -151,7 +154,7 @@
                 <div class="row col-lg-12 card card-info">
                     <div class="card">
                         <div class="card-header" id="table-header">
-                            <h3 class="card-title">Customer Details</h3>
+                            <h3 class="card-title">Item Details</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body p-0">
@@ -159,35 +162,40 @@
                                 <thead>
                                 <tr>
                                     <th class="col-name" style="width: 20px">No</th>
-                                    <th class="col-name">Customer ID</th>
-                                    <th class="col-name">Name</th>
-                                    <th class="col-name">Address</th>
+                                    <th class="col-name">Item Code</th>
+                                    <th class="col-name">Description</th>
+                                    <th class="col-name">Qty On Hand</th>
+                                    <th class="col-name">Price</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>1.</td>
-                                    <td>C001</td>
-                                    <td>Poorni</td>
-                                    <td>Panadura</td>
+                                    <td>I001</td>
+                                    <td>Soap</td>
+                                    <td>50</td>
+                                    <td>50.00</td>
                                 </tr>
                                 <tr>
                                     <td>2.</td>
-                                    <td>C002</td>
-                                    <td>Danapala</td>
-                                    <td>Nuwara</td>
+                                    <td>I002</td>
+                                    <td>Milk Packet</td>
+                                    <td>70</td>
+                                    <td>400.00</td>
                                 </tr>
                                 <tr>
                                     <td>3.</td>
-                                    <td>C003</td>
-                                    <td>Gunapala</td>
-                                    <td>Colombo</td>
+                                    <td>I003</td>
+                                    <td>Chocolate</td>
+                                    <td>30</td>
+                                    <td>100.00</td>
                                 </tr>
                                 <tr>
                                     <td>4.</td>
-                                    <td>C004</td>
-                                    <td>Perera</td>
-                                    <td>Kurunagala</td>
+                                    <td>I004</td>
+                                    <td>Sugar Packet</td>
+                                    <td>10</td>
+                                    <td>200.00</td>
                                 </tr>
                                 </tbody>
                             </table>
