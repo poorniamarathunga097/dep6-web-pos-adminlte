@@ -1,0 +1,21 @@
+.cus-button{
+   padding: 10px;
+}
+.customer-buttons{
+    float: right;
+}
+.btn-primary{
+    min-width: 100px;
+    text-align: center;
+}
+#table-header{
+/*    background-color: #3c8dbc;*/
+    background-color: black;
+    color: white;
+}
+td{
+    text-align: center;
+}
+.col-name{
+    text-align: center;
+}
