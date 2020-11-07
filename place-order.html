@@ -119,26 +119,57 @@
                     <form>
                     <div class="card-body">
                         <div class=" customer-buttons row">
-                            <div class="input-group col-lg-6 mb-3">
+                            <div class="input-group col-lg-2 mb-3">
+                                <div class="form-group">
+                                    <select class="form-control select2bs4" style="width: 100%;">
+                                        <option selected="selected">Customer ID</option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group col-lg-5 mb-3">
                                 <input type="text" class="form-control" placeholder="Full Name">
                             </div>
-                            <div class="input-group col-lg-6 mb-3">
+                            <div class="input-group col-lg-5 mb-3">
                                 <input type="text" class="form-control" placeholder="Address">
                             </div>
                         </div>
                         <div class=" customer-buttons row">
-                            <div class="input-group col-lg-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Full Name">
+                            <div class="input-group col-lg-2 mb-3">
+                                <div class="form-group">
+                               <select class="form-control select2bs4" style="width: 100%;">
+                                   <option selected="selected">Item Code</option>
+                                   <option>Alaska</option>
+                                   <option>California</option>
+                                   <option>Delaware</option>
+                                   <option>Tennessee</option>
+                                   <option>Texas</option>
+                                   <option>Washington</option>
+                               </select>
+                           </div>
                             </div>
-                            <div class="input-group col-lg-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Address">
+                            <div class="input-group col-lg-4 mb-3">
+                                <input type="text" class="form-control" placeholder="Description">
+                            </div>
+                            <div class="input-group col-lg-3 mb-3">
+                                <input type="text" class="form-control" placeholder="Qty On Hand">
+                            </div>
+                            <div class="input-group col-lg-3 mb-3">
+                                <input type="text" class="form-control" placeholder="Price">
                             </div>
                         </div>
 
                         <div class=" my-button row">
                             <div class="cus-button">
+                                <input type="text" class="form-control" placeholder="Qty">
+                            </div>
+                            <div class="cus-button">
                                 <button type="submit" class="btn btn-primary">Add To Cart</button>
-                                <!-- /input-group -->
                             </div>
                             <!-- /.col-lg-6 -->
                         </div>
@@ -156,42 +187,61 @@
                                 <thead>
                                 <tr>
                                     <th class="col-name" style="width: 20px">No</th>
-                                    <th class="col-name">Customer ID</th>
-                                    <th class="col-name">Name</th>
-                                    <th class="col-name">Address</th>
+                                    <th class="col-name">Item Code</th>
+                                    <th class="col-name">Description</th>
+                                    <th class="col-name">Unit Price</th>
+                                    <th class="col-name">Qty</th>
+                                    <th class="col-name">Total</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>1.</td>
-                                    <td>C001</td>
-                                    <td>Poorni</td>
-                                    <td>Panadura</td>
+                                    <td>I002</td>
+                                    <td>Milk Packet</td>
+                                    <td>200.00</td>
+                                    <td>4</td>
+                                    <td>800.00</td>
                                 </tr>
                                 <tr>
                                     <td>2.</td>
-                                    <td>C002</td>
-                                    <td>Danapala</td>
-                                    <td>Nuwara</td>
+                                    <td>I001</td>
+                                    <td>Soap</td>
+                                    <td>35.00</td>
+                                    <td>3</td>
+                                    <td>70.00</td>
                                 </tr>
                                 <tr>
                                     <td>3.</td>
-                                    <td>C003</td>
-                                    <td>Gunapala</td>
-                                    <td>Colombo</td>
+                                    <td>I003</td>
+                                    <td>Chocolate</td>
+                                    <td>100.00</td>
+                                    <td>4</td>
+                                    <td>400.00</td>
                                 </tr>
                                 <tr>
                                     <td>4.</td>
-                                    <td>C004</td>
-                                    <td>Perera</td>
-                                    <td>Kurunagala</td>
+                                    <td>I004</td>
+                                    <td>Sugar</td>
+                                    <td>200.00</td>
+                                    <td>5</td>
+                                    <td>1000.00</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <!-- /.card-body -->
                     </div>
+                    <div class="my-button row" id="place-order-footer">
+                        <div class="cus-button">
+                            <label class="total-label">LKS:1000.00</label>
+                        </div>
+                        <div class="cus-button" id="place-order-button">
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </div>
+                    </div>
                 </div>
+
             </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->
