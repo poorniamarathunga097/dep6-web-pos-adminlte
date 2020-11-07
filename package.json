@@ -1,0 +1,9 @@
+{
+  "name": "web-pos-adminlte",
+  "version": "1.0.0",
+  "dependencies": {
+    "admin-lte": "^3.0.5",
+    "bootstrap": "^4.5.3",
+    "browser-sync": "^2.26.13"
+  }
+}
