@@ -1,0 +1,12 @@
+#home-animation{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#home-heading{
+    transition-property: all;
+    transition-duration: 2s;
+}
+#home-heading:hover{
+    color: blue!important;
+    font-size: 4em;
+}
